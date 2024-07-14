@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace switch_board_simulator.Entities
 {
-    public class Appliance(int id, string name, State state)
+    public class Appliance(int id, string name, State state = State.Off)
     {
         public int Id { get; set; } = id;
 
